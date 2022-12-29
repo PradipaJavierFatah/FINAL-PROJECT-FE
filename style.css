@@ -101,7 +101,6 @@ a{
     text-align: center;
 }
 
-
 #hero-section .container .hero-image > img{
     width: 400px;
 }
@@ -131,10 +130,17 @@ a{
 #about-section .container .about-content > h2{
     font-size: 40px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 #about-section .container .about-content > p{
     font-size: 18px;
+    width: 813px;
+    height: 150px;
+    left: 316px;
+    top: 867px;
+    line-height: 30px;
+    text-align: center;
 }
 
 #service-section .container{
