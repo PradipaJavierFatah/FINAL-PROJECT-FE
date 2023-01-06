@@ -30,7 +30,7 @@ a{
 .login-btn > a{
     padding: 0.75rem 1.5rem;
     border-radius: 99px;
-    background-color: var(--green);
+    background-color: greenyellow;
     color: var(--white);
     font-weight: 600;
 }
@@ -106,6 +106,11 @@ a{
     font-weight: 500;
 }
 
+#navbar .container .login-btn a{
+    color: var(--black);
+    font-weight: 500;
+}
+
 #navbar .container .nav-menu .nav-link{
     display: flex;
     gap: 2rem;
@@ -113,7 +118,7 @@ a{
 
 #hero-section .container{
     min-height: 100vh;
-    background: linear-gradient(179.98deg, rgba(0, 0, 0, 0) 4.17%, #0C0C0C 115.57%), url(/assets/LP-hero.png);
+    background: linear-gradient(179.98deg, rgba(0, 0, 0, 0) 4.17%, #0C0C0C 115.57%), url(/assets/gif.gif);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -129,7 +134,7 @@ a{
 }
 
 #hero-section .container .hero-content .heading > h1{
-    color: #57968B;
+    color: greenyellow;
     font-size: 80px;
 }
 
@@ -141,7 +146,7 @@ a{
 }
 
 .heading h2 span:nth-child(2) {
-    color: #2D9280;
+    /* color: #2D9280; */
 }
 
 #hero-section .container .hero-image > img{
