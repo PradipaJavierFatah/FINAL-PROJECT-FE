@@ -10,3 +10,8 @@ window.onscroll = function(){
     }
     prevYpos = Ypos;
 }
+
+$(window).on('load', function(){
+    $(".preload").fadeTo(3000,1).fadeOut(3000);
+    $(".container").fadeIn(5000);
+})

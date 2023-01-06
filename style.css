@@ -35,6 +35,51 @@ a{
     font-weight: 600;
 }
 
+
+.preload {
+    width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    background-size: 400% 400%;
+	box-shadow: 0px 0px 20px black;
+    background: linear-gradient(0deg, rgba(45,146,128,1) 3%, rgba(123,186,175,1) 100%);
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.preload h2 {
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.preload h2 {
+    content: attr(data-text);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);width: 400px;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px white solid;
+    animation: animasi 4s linear infinite;
+    filter: drop-shadow(0 0 20px white) drop-shadow(0 0 50px white);
+}
+
+@keyframes animasi {
+    0%,10%,100%
+    {width: 0;}
+    70%,90%
+    {width: 400px;}
+}
+
 #navbar{
     width: 100%;
     position: fixed;
@@ -67,13 +112,14 @@ a{
 }
 
 #hero-section .container{
-    min-height: 85vh;
-    /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./assets/hero-image.png);
-    background-repeat: no-repeat; */
+    min-height: 100vh;
+    background: linear-gradient(179.98deg, rgba(0, 0, 0, 0) 4.17%, #0C0C0C 115.57%), url(/assets/LP-hero.png);
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: right;
+    background-color: #FFB100;
 }
 
 #hero-section .container .hero-content{
@@ -83,26 +129,24 @@ a{
 }
 
 #hero-section .container .hero-content .heading > h1{
-    color: var(--black);
-    width: 1400px;
-    height: 96px;
-    right: 2000px;
-    top: 120px;
-    font-size: 64px;
-    text-align: center;
+    color: #57968B;
+    font-size: 80px;
 }
 
 #hero-section .container .hero-content .heading > h2{
-    color: var(--black);
-    width: 1400px;
-    height: 65px;
-    top: 202px;
-    font-size: 36px;
+    color: var(--white);
+    width: 580px;
+    font-size: 32px;
     text-align: center;
 }
 
+.heading h2 span:nth-child(2) {
+    color: #2D9280;
+}
+
 #hero-section .container .hero-image > img{
-    width: 400px;
+    /* width: 100%;
+    min-height: 100vh; */
 }
 
 #hero-section .container .hero-content .lets-talk-btn > a{
@@ -120,6 +164,7 @@ a{
 
 #about-section .container .about-image > img{
     width: 400px;
+    height: 100vh;
 }
 
 #about-section .container .about-content{
