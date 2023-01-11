@@ -5,7 +5,9 @@
     --black: #2b2b2b;
     --yelow: #FFB100;
     --navy: #0A2647;
+    --gray: #D9D9D9;
     --green: #6CBFB1;
+
 
     --blue1: #009393;
     --blue2: #3CADAD;
@@ -37,7 +39,7 @@ a{
 .login-btn > a{
     padding: 0.75rem 1.5rem;
     border-radius: 99px;
-    background-color: greenyellow;
+    background-color: var(--blue6);
     color: var(--white);
     font-weight: 600;
 }
@@ -90,11 +92,19 @@ a{
     transition: 0.5s top ease-in-out;
 }
 
+#navbar .container .nav-logo a{
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--blue4)
+
+}
+
 #navbar .container{
     padding-block: 1.5rem;
     display: flex;
     justify-content: space-between;
-    backdrop-filter: brightness(50%);
+    /* backdrop-filter: brightness(50%); */
+    background-color: var(--gray);
 }
 
 #navbar .container .nav-menu{
@@ -104,12 +114,12 @@ a{
 }
 
 #navbar .container .nav-menu a{
-    color: var(--white);
+    color: var(--blue4);
     font-weight: 500;
 }
 
 #navbar .container .login-btn a{
-    color: var(--black);
+    color: white;
     font-weight: 500;
 }
 
@@ -190,6 +200,45 @@ a{
     text-align: center;
     color: var(--blue7);
 }
+
+/* Mentor & Jury  */
+    html,
+    body {
+    position: relative;
+    height: 100%;
+    } 
+
+    body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0px;
+    padding: 0px;
+    }
+
+    .swiper{
+    width: 65%;
+    height: 65%;
+    }
+
+    .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: white; */
+
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    }
+
+    .swiper-slide img{
+        height: 100%;
+        }
+/* Mentor & Jury  */
 
 
 #faq-section .container {
