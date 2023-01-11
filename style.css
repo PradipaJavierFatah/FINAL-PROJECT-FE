@@ -246,6 +246,7 @@ a{
     flex-direction: column;
     align-items: center;
     padding-block: 3rem;
+    min-height: 100vh;
 }
 
 #faq-section .container .head > h1 {
@@ -344,6 +345,7 @@ a{
     flex-direction: column;
     align-items: center;
     padding-block: 3rem;
+    min-height: 100vh;
 }
 
 #Timeline-section .container .head > h1{
@@ -380,7 +382,7 @@ a{
     flex-direction: row-reverse;
     width: 805px;
     background: #EBEBEB;
-    border: 8px solid var(--blue4);
+    border: 8px solid var(--blue2);
     border-radius: 100px;
     padding: 20px 25px;
     gap: 115px;
@@ -391,7 +393,7 @@ a{
     flex-direction: row;
     width: 805px;
     background: #EBEBEB;
-    border: 8px solid var(--blue4);
+    border: 8px solid var(--blue1);
     border-radius: 100px;
     padding: 20px 25px;
     gap: 35px;
@@ -441,6 +443,7 @@ a{
     flex-direction: column;
     align-items: center;
     padding-block: 3rem;
+    min-height: 100vh;
 }
 
 #Sponsor-section .container .head > h1 {
@@ -499,6 +502,7 @@ a{
     flex-direction: column;
     align-items: center;
     padding-block: 3rem;
+    min-height: 100vh;
 }
 
 #media-section .container .head > h1 {
