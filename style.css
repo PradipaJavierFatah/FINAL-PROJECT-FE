@@ -129,16 +129,13 @@ a{
 }
 
 
+/* Landing Page */
 #hero-section .container{
-    min-height: 100vh;
-    background: linear-gradient(179.98deg, rgba(0, 0, 0, 0) 4.17%, #0C0C0C 115.57%), url(/assets/gif.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: right;
-    background-color: #FFB100;
-    gap: 3rem;
+    padding-block: 3rem;
+    margin-top: 6rem;
 }
 
 #hero-section .container .hero-content{
@@ -148,42 +145,63 @@ a{
 }
 
 #hero-section .container .hero-content .heading > h1{
-    color: greenyellow;
+    font-weight: 800;
     font-size: 80px;
+    line-height: 120px;
+    text-align: center;
+    background: linear-gradient(180deg, #6FC6C6 63.02%, rgba(111, 198, 198, 0) 92.19%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 #hero-section .container .hero-content .heading > h2{
-    color: var(--white);
-    width: 580px;
-    font-size: 32px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
     text-align: center;
+    color: var(--blue5);
 }
 
-#hero-section .container .hero-image > img{
-    /* width: 100%;
-    min-height: 100vh; */
+#hero-section .container .hero-content .heading h2 > .span1 {
+    background: linear-gradient(182.99deg, #159E9E 13.61%, #7BBAAF 31.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    font-size: 40px;
 }
 
-#hero-section .container .hero-content .lets-talk-btn > a{
-    padding-inline: 0rem;
-    color: var(--green);
+#hero-section .container .hero-content .heading h2 > .span2 {
+    font-weight: 800;
+    font-size: 40px;
+    background: linear-gradient(178.09deg, #75AEAE 50.31%, #2D9280 98.39%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#hero-section .container .hero-content .box > img{
+    display: flex;
+    align-items: center;
 }
 
 
 #hero2-section .container{
-    padding-block: 3rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    /* padding-block: 3rem; */
 }
 
 #hero2-section .container .hero2-content{
-    text-align: end;
-    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
 }
 
-#hero2-section .container .hero2-content > h2{
+#hero2-section .container .hero2-content .heading > h2{
     font-weight: 600;
     font-size: 36px;
     margin-bottom: 16px;
@@ -191,7 +209,7 @@ a{
     color: var(--blue4);
 }
 
-#hero2-section .container .hero2-content > p{
+#hero2-section .container .hero2-content .heading > p{
     width: 1035px;
     height: 120px;
     font-weight: 500;
@@ -200,6 +218,14 @@ a{
     text-align: center;
     color: var(--blue7);
 }
+
+#hero2-section .container .hero2-content .box > img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+/* Landing Page */
+
 
 /* Mentor & Jury  */
     html,
@@ -246,7 +272,6 @@ a{
     flex-direction: column;
     align-items: center;
     padding-block: 3rem;
-    min-height: 100vh;
 }
 
 #faq-section .container .head > h1 {
@@ -264,7 +289,11 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 43px 20px;
+    gap: 10px 20px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(625px 625px, 1fr 1fr)); */
+	/* grid-gap: 10px;
+    grid-template-columns: 1fr 1fr; */
 }
 
 #faq-section .container .faq-content .qabox {
@@ -312,8 +341,45 @@ a{
     background: var(--blue5);
     border: 2px solid var(--blue5);
     border-radius: 15px;
-    padding: 16px 28px
+    padding: 0px 28px;
 }
+
+/* DD */
+#faq-section .container .faq-content .abox {
+    max-height: 0;
+    overflow: hidden;
+    border: none;
+    transition: max-height 1s ease;
+    position: relative;
+}
+
+#faq-section .container .faq-content .qabox.active .abox {
+    max-height: 300px;
+}
+
+#faq-section .container .faq-content .qabox.active .span-btn i {
+    transform: rotate(180deg);
+}
+
+.span-btn i{
+    transition: transform .5s ease-in;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#faq-section .container .faq-content .qabox.active .abox p {
+    animation: fade 1s ease-in-out;
+}
+/* DD */
 
 #faq-section .container .faq-content .abox p  {
     font-weight: 500;
