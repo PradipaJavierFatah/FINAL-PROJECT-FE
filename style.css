@@ -96,7 +96,6 @@ a{
     font-weight: 800;
     font-size: 24px;
     color: var(--blue4)
-
 }
 
 #navbar .container{
@@ -115,19 +114,31 @@ a{
 
 #navbar .container .nav-menu a{
     color: var(--blue4);
-    font-weight: 500;
+    font-weight: 700;
+}
+
+#navbar .container .nav-link a:hover {
+    color: var(--blue1);
+    font-weight: 700;
+    border-bottom: 2px solid var(--blue1);
+    transition: all 0.1;
+}
+
+#navbar .container .nav-menu a:hover {
+    color: var(--blue1);
+    font-weight: 700;
+    transition: 0.1s;
 }
 
 #navbar .container .login-btn a{
     color: white;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 #navbar .container .nav-menu .nav-link{
     display: flex;
     gap: 2rem;
 }
-
 
 #hero-section .container{
     min-height: 100vh;
