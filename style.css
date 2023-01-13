@@ -140,11 +140,8 @@ a{
     gap: 2rem;
 }
 
-<<<<<<< HEAD
-=======
 
 /* Landing Page */
->>>>>>> de80007e23e0e70ef6b46c381cc99020b94379a3
 #hero-section .container{
     display: flex;
     flex-direction: column;
