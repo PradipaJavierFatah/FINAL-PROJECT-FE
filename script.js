@@ -17,3 +17,20 @@ window.onscroll = function(){
     }
     prevYpos = Ypos;
 }
+
+
+//FAQs
+const faqs = document.querySelectorAll(".qabox");
+
+faqs.forEach(qabox => {
+    qabox.addEventListener("click", () => {
+
+        // qabox.forEach((qabox) => {
+        //     if(e.target.nextElementSibling !== qabox && qabox.classList.contains("active")) {
+        //         qabox.classList.remove("active");
+        //     }
+        // });
+
+        qabox.classList.toggle("active");
+    });
+});
