@@ -244,9 +244,6 @@ a{
     body {
     position: relative;
     height: 100%;
-    } 
-
-    body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
@@ -255,12 +252,16 @@ a{
     }
 
     .swiper{
-    width: 65%;
-    height: 65%;
+    width: 40%;
+    height: 50%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     }
 
-    .swiper-slide {
-    text-align: center;
+    .swiper-slide{
+    /* text-align: center; */
+    /* align-items: center; */
     font-size: 18px;
     /* background: white; */
 
@@ -275,7 +276,24 @@ a{
 
     .swiper-slide img{
         height: 100%;
+        /* width: 288px;
+        height: 173px; */
+        /* left: 367px;
+        top: 2836px; */
         }
+
+#mentor-jury .swiper{
+    display: flex;
+    align-item: center;
+    justify-content: center;
+}
+
+#mentor-jury .swiper .swiper-wrapper{
+    display: flex;
+    /* align-item: center;
+    justify-content: center; */
+}
+
 /* Mentor & Jury  */
 
 /* FAQ */
