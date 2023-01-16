@@ -240,32 +240,6 @@ a{
 
 
 /* Mentor & Jury  */
-<<<<<<< HEAD
-    html,
-    body {
-    position: relative;
-    height: 100%;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0px;
-    padding: 0px;
-    }
-
-    .swiper{
-    width: 40%;
-    height: 50%;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    }
-
-    .swiper-slide{
-    /* text-align: center; */
-    /* align-items: center; */
-    font-size: 18px;
-    /* background: white; */
-=======
 #mentor .heading > h1 {
     color: var(--blue4);
     font-weight: 800;
@@ -276,7 +250,6 @@ a{
     margin-block: 3rem;
     text-align: center;
 }
->>>>>>> 5b3cef2a1bd43976185db734b45ea15aa12ea548
 
 #mentor .container {
     display: flex;
@@ -284,28 +257,6 @@ a{
     padding-block: 1rem;
 }
 
-<<<<<<< HEAD
-    .swiper-slide img{
-        height: 100%;
-        /* width: 288px;
-        height: 173px; */
-        /* left: 367px;
-        top: 2836px; */
-        }
-
-#mentor-jury .swiper{
-    display: flex;
-    align-item: center;
-    justify-content: center;
-}
-
-#mentor-jury .swiper .swiper-wrapper{
-    display: flex;
-    /* align-item: center;
-    justify-content: center; */
-}
-
-=======
 #mentor .container .sub-header {
     display: flex;
     flex-direction: column;
@@ -460,7 +411,6 @@ a{
     font-size: 16px;
     line-height: 24px;
 }
->>>>>>> 5b3cef2a1bd43976185db734b45ea15aa12ea548
 /* Mentor & Jury  */
 
 /* FAQ */
