@@ -240,6 +240,74 @@ a{
 }
 /* Landing Page */
 
+/* Champion Prizes */
+#champ-section .container {
+    display: flex;
+    flex-direction: column;
+    padding-block: 3rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+#champ-section .container .header > h1 {
+    color: var(--blue4);
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 98px;
+    border: 1px solid #FFFEFE;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-block: 3rem;
+    text-align: center;
+}
+
+#champ-section .container .champ-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-left: -8rem;
+}
+
+#champ-section .container .champ-content .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#champ-section .container .champ-content .box > h1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #68A197;
+}
+
+#champ-section .container .price-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 483.75px;
+    height: 82.07px;
+    background-color: #8DD0D0;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+#champ-section .container .price-btn > h1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+/* Champion Prizes */
 
 /* Mentor & Jury  */
     html,
