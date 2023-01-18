@@ -309,11 +309,8 @@ a{
 }
 /* Champion Prizes */
 
-<<<<<<< HEAD
 /* Mentor & Jury */
-=======
 /* Mentor & Jury  */
->>>>>>> e1be4a8033c17eb9f7ee669f6e0a0abc9a147dfc
 #mentor .heading > h1 {
     color: var(--blue4);
     font-weight: 800;
@@ -411,11 +408,8 @@ a{
     animation-name: fade;
     animation-duration: 1.5s;
 }
-<<<<<<< HEAD
 
-=======
   
->>>>>>> e1be4a8033c17eb9f7ee669f6e0a0abc9a147dfc
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -866,7 +860,6 @@ a{
 }
 /* Media Partner */
 
-<<<<<<< HEAD
 /* contact us */
 #Contact-section .container .content > h1{
     color: var(--blue4);
@@ -1036,7 +1029,6 @@ form .submit > input {
 
 
 
-=======
 
 
 
@@ -1105,4 +1097,3 @@ form .submit > input {
     font-weight: 600;
     color: var(--blue);
 }
->>>>>>> e1be4a8033c17eb9f7ee669f6e0a0abc9a147dfc
