@@ -950,10 +950,12 @@ form .massage > textarea {
 
 textarea {
     width: 250px;
-    height: 35px;
+    height: 150px;
     background-color: var(--white1);
     border: 2px solid var(--white1);
     border-radius: 12px;
+    padding: 8px;
+    resize: none;
 }
 
 form .submit > input {
