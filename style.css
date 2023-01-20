@@ -416,11 +416,8 @@ a{
     animation-name: fade;
     animation-duration: 1.5s;
 }
-<<<<<<< HEAD
 
-=======
   
->>>>>>> e1be4a8033c17eb9f7ee669f6e0a0abc9a147dfc
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -1053,3 +1050,71 @@ form .submit > input {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#service-section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black);
+    padding-block: 3rem;
+}
+
+#service-section .container > h2{
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+#service-section .container .service-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+}
+
+#service-section .container .service-content .service-card{
+    padding: 3rem;
+    background-color: var(--white);
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+
+#service-section .container .service-content .service-card .service-detail{
+    height: 100%;
+}
+
+#service-section .container .service-content .service-card .service-detail > h3{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+#service-section .container .service-content .service-card > a{
+    font-weight: 600;
+    color: var(--blue);
+}
