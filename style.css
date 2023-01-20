@@ -96,10 +96,18 @@ a{
     transition: 0.5s top ease-in-out;
 }
 
+#navbar .container .nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 #navbar .container .nav-logo a{
     font-weight: 800;
     font-size: 24px;
-    color: var(--blue4)
+    color: var(--blue4);
+
 }
 
 #navbar .container{
@@ -309,11 +317,8 @@ a{
 }
 /* Champion Prizes */
 
-<<<<<<< HEAD
 /* Mentor & Jury */
-=======
 /* Mentor & Jury  */
->>>>>>> e1be4a8033c17eb9f7ee669f6e0a0abc9a147dfc
 #mentor .heading > h1 {
     color: var(--blue4);
     font-weight: 800;
@@ -867,6 +872,15 @@ a{
 /* Media Partner */
 
 /* contact us */
+
+#contact-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 #Contact-section .container .content > h1{
     color: var(--blue4);
     font-weight: 800;
@@ -878,20 +892,21 @@ a{
     text-align: center;
 }
 
+
 #Contact-section .container .box {
-    /* width: 1252px;
-    height: 500px; */
+    width: 1245px;
+    /* height: 1062px; */ 
     background: linear-gradient(180.66deg, #56B5B5 -97%, rgba(255, 255, 255, 0) 175.82%);
     border: 1px solid #56B5B5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     padding: 55px 60px;
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem;
-    justify-items: center;
+    justify-content: center; 
 }
 
 form input::-webkit-input-placeholder,
