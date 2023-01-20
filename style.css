@@ -870,7 +870,7 @@ a{
 
 /* contact us */
 
-#contact-section .container{
+#Contact-section .container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -906,6 +906,123 @@ a{
     justify-content: center; 
 }
 
+#Contact-section .container .box .header h1{
+    color: var(--blue1);
+    text-shadow: 0px 4px 4px rgba(215, 255, 248, 1) ;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 68px;
+    text-align: center;
+}
+
+#Contact-section .container .box .right .box-sosmed{
+    width: 446px;
+    height: 546px;
+    padding: 32px;
+    background: linear-gradient(180deg, #56B5B5 -26.21%, rgba(139, 203, 190, 0) 181.83%, rgba(160, 216, 216, 0.0520784) 181.83%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed .sm a{
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed .sm a img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed .ig a img {
+    width: 60px;
+    height: 58.1px;
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed .em a img {
+    width: 60px;
+    height: 58px;
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed .tw a img {
+    width: 62px;
+    height: 62px;
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed .fb a img {
+    width: 58px;
+    height: 58px;
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed .in a img {
+    width: 62px;
+    height: 62px;
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed .sm a h2 {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 56px;
+    color: var(--blue1);
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed .tw a h2 {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 70px;
+    color: var(--blue1);
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed .fb a h2,
+#Contact-section .container .box .right .box-sosmed .sosmed .in a h2 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+    color: var(--blue1);
+}
+
+
+#Contact-section .container .box .right .box-sosmed .sosmed ul li a{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#Contact-section .container .box .right .box-sosmed .sosmed ul li a i{
+    text-decoration: none;
+    color: var(--white1);
+    /* width: 77px;
+    height: 77px; */
+    transform: scale(3);
+}
+
+
+
+#Contact-section .container .box .right .box-sosmed .sosmed ul li a h2{
+    text-decoration: none;
+    color: var(--blue1);
+}
+
+
+
+li{
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+
 form input::-webkit-input-placeholder,
 form textarea::-webkit-input-placeholder{
     font-weight: 600;
@@ -918,72 +1035,79 @@ form textarea::-webkit-input-placeholder{
 label{
     color: var(--blue1);
     font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
 }
 
 form .name > input {
-    width: 250px;
-    height: 35px;
+    width: 530px;
+    height: 58px;
     padding: 10px;
     border: 2px solid var(--white1);
     background-color: var(--white1);
     border-radius: 12px;
     font-weight: 400;
+    margin-bottom: 56px;
 }
 
 form .email > input {
-    width: 250px;
-    height: 35px;
+    width: 530px;
+    height: 58px;
     padding: 10px;
     border: 2px solid var(--white1);
     background-color: var(--white1);
     border-radius: 12px;
     font-weight: 400;
+    margin-bottom: 56px;
 }
 
 form .subject > input {
-    width: 250px;
-    height: 35px;
+    width: 530px;
+    height: 58px;
     padding: 10px;
     border: 2px solid var(--white1);
     background-color: var(--white1);
     border-radius: 12px;
     font-weight: 400;
-}
-
-form .massage > textarea {
-    width: 250px;
-    height: 35px;
-    resize: none;
-    padding: 10px;
-    border: 2px solid var(--white1);
-    background-color: var(--white1);
-    border-radius: 12px;
+    margin-bottom: 56px;
 }
 
 textarea {
-    width: 250px;
-    height: 150px;
+    width: 530px;
+    height: 270px;
     background-color: var(--white1);
     border: 2px solid var(--white1);
     border-radius: 12px;
     padding: 8px;
     resize: none;
+    margin-bottom: 56px;
 }
 
-form .submit > input {
-    display: flex;
-    width: 100px;
-    height: 50px;
+form .submit  input {
+    width: 243px;
+    height: 89px;
     padding: 15px;
     border: 2px solid var(--blue2);
     background-color: var(--blue2);
     color: var(--white1);
     border-radius: 15px;
+
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;    
     align-items: center;
     justify-content: center;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
+}
+
+
+
+#Contact-section .container .box .left {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
 }
 
 /* Footer */
