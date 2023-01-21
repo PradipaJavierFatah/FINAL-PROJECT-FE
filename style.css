@@ -96,10 +96,18 @@ a{
     transition: 0.5s top ease-in-out;
 }
 
+#navbar .container .nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 #navbar .container .nav-logo a{
     font-weight: 800;
     font-size: 24px;
-    color: var(--blue4)
+    color: var(--blue4);
+
 }
 
 #navbar .container{
