@@ -269,7 +269,7 @@ a{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 6rem;
     margin-left: -8rem;
 }
 
@@ -278,7 +278,7 @@ a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 #champ-section .container .champ-content .box > h1 {
@@ -309,7 +309,7 @@ a{
 }
 /* Champion Prizes */
 
-/* Mentor & Jury */
+
 /* Mentor & Jury  */
 #mentor .heading > h1 {
     color: var(--blue4);
@@ -326,6 +326,9 @@ a{
     display: flex;
     flex-direction: row;
     padding-block: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #mentor .container .sub-header {
@@ -341,6 +344,7 @@ a{
     line-height: 192px;
     text-align: center;
     color: var(--blue5);
+    right: -20rem;
 }
 
 #mentor .container .sub-header > h2 {
@@ -353,7 +357,6 @@ a{
 
 #mentor .container .slideshow-container {
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -420,6 +423,9 @@ a{
     flex-direction: row-reverse;
     padding-block: 1rem;
     gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #jury .container .sub-head {
@@ -448,6 +454,8 @@ a{
 #jury .container .juries {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #jury .container .juries .box {
@@ -505,14 +513,15 @@ a{
 
 #faq-section .container .faq-content {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-    /* display: grid; */
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(625px 625px, 1fr 1fr)); */
-	/* grid-gap: 10px;
-    grid-template-columns: 1fr 1fr; */
+	grid-gap: 1rem;
+    column-gap: 6rem;
+    grid-template-columns: auto auto;
+
 }
 
 #faq-section .container .faq-content .qabox {
@@ -533,7 +542,7 @@ a{
     transform: scale(1.2);
 }
 
-#faq-section .container .faq-content .qbox {
+#faq-section .container .faq-content .qbox-question {
     width: 626px;
     background-color: white;
     box-shadow: 9px 8px 5px -4px rgba(111,198,198,0.75);
@@ -546,16 +555,18 @@ a{
     padding: 16px 24px;
     gap: 1rem;
     justify-content: space-between;
+    /* cursor: pointer; */
 }
 
-#faq-section .container .faq-content .qbox > h1 {
+#faq-section .container .faq-content .qbox-question > h1 {
     display: flex;
     font-weight: 600;
     font-size: 21px;
     color: var(--blue4);
 }
 
-#faq-section .container .faq-content .abox {
+#faq-section .container .faq-content .abox-answer {
+    /* display: none; */
     width: 580px;
     background: var(--blue5);
     border: 2px solid var(--blue5);
@@ -563,9 +574,8 @@ a{
     padding: 0px 28px;
 }
 
-
 /* DD */
-#faq-section .container .faq-content .abox {
+#faq-section .container .faq-content .abox-answer {
     max-height: 0;
     overflow: hidden;
     border: none;
@@ -573,7 +583,7 @@ a{
     position: relative;
 }
 
-#faq-section .container .faq-content .qabox.active .abox {
+#faq-section .container .faq-content .qabox.active .abox-answer {
     max-height: 300px;
 }
 
@@ -596,27 +606,27 @@ a{
     }
 }
 
-#faq-section .container .faq-content .qabox.active .abox p {
+#faq-section .container .faq-content .qabox.active .abox-answer p {
     animation: fade 1s ease-in-out;
 }
 /* DD */
 
-#faq-section .container .faq-content .abox p  {
+#faq-section .container .faq-content .abox-answer p  {
     font-weight: 500;
     font-size: 19px;
     line-height: 32px;
     color: white;
 }
 
-#faq-section .container .faq-content .abox ul li{
+#faq-section .container .faq-content .abox-answer ul li{
     color: white;
 }
 
-#faq-section .container .faq-content .abox .contact-box ul li{
+#faq-section .container .faq-content .abox-answer .contact-box ul li{
     list-style: none;
 }
 
-#faq-section .container .faq-content .abox .contact-box {
+#faq-section .container .faq-content .abox-answer .contact-box {
     display: flex;
     flex-direction: row;
     gap: 8rem;
@@ -631,7 +641,7 @@ a{
     flex-direction: column;
     align-items: center;
     padding-block: 3rem;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 #Timeline-section .container .head > h1{
@@ -641,7 +651,7 @@ a{
     line-height: 98px;
     border: 1px solid #FFFEFE;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-block: 3rem;
+    /* margin-block: 3rem; */
 }
 
 #Timeline-section .container .box {
@@ -729,7 +739,7 @@ a{
     flex-direction: column;
     align-items: center;
     padding-block: 3rem;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 #Sponsor-section .container .head > h1 {
@@ -786,7 +796,7 @@ a{
     flex-direction: column;
     align-items: center;
     padding-block: 3rem;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 #media-section .container .head > h1 {
@@ -881,20 +891,21 @@ a{
     text-align: center;
 }
 
+
 #Contact-section .container .box {
-    /* width: 1252px;
-    height: 500px; */
+    width: 1245px;
+    /* height: 1062px; */ 
     background: linear-gradient(180.66deg, #56B5B5 -97%, rgba(255, 255, 255, 0) 175.82%);
     border: 1px solid #56B5B5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     padding: 55px 60px;
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem;
-    justify-items: center;
+    justify-content: center; 
 }
 
 #Contact-section .container .box .header h1{
@@ -1162,74 +1173,3 @@ form .submit  input {
     font-weight: 700;
 }
 /* Footer */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#service-section .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--black);
-    padding-block: 3rem;
-}
-
-#service-section .container > h2{
-    font-size: 40px;
-    margin-bottom: 32px;
-}
-
-#service-section .container .service-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem 1rem;
-}
-
-#service-section .container .service-content .service-card{
-    padding: 3rem;
-    background-color: var(--white);
-    box-shadow: 0 0 16px rgba(0,0,0,0.1);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 16px;
-}
-
-#service-section .container .service-content .service-card .service-detail{
-    height: 100%;
-}
-
-#service-section .container .service-content .service-card .service-detail > h3{
-    font-size: 24px;
-    margin-bottom: 12px;
-}
-
-#service-section .container .service-content .service-card > a{
-    font-weight: 600;
-    color: var(--blue);
-}

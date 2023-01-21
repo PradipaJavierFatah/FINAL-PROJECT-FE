@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="https://kit.fontawesome.com/812136cf50.js" crossorigin="anonymous"></script>
 
-    
+    <script src="path/to/faq.js"></script>
     <script src="script.js" defer ></script>
 </head>
 <body>
@@ -271,13 +271,13 @@
             </div>
             <div class="faq-content">
                 <div class="qabox">
-                    <div class="qbox">
+                    <div class="qbox-question" onclick="toggleAnswer(this)">
                         <h1>Apa saja persyaratan untuk berpartisipasi?</h1>
                         <div class="span-btn">
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                     </div>
-                    <div class="abox">
+                    <div class="abox-answer">
                         <br>
                         <ul>
                             <li><p>Peserta adalah warga negara Indonesia berusia 18 hingga 25 tahun untuk memenuhi syarat.</p></li>
@@ -289,13 +289,13 @@
                 </div>
 
                 <div class="qabox">
-                    <div class="qbox">
+                    <div class="qbox-question" onclick="toggleAnswer(this)">
                         <h1>Kapan batas waktu pendaftaran?</h1>
                         <div class="span-btn">
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                     </div>
-                    <div class="abox">
+                    <div class="abox-answer">
                         <br>
                         <p>Batas akhir pendaftaran adalah Rabu, 7 Juni 2022. Namun, jika pendaftaran Developer Workshop sudah mencapai jumlah maksimal, maka pendaftaran akan ditutup lebih awal. Jadi, jangan sampai ketinggalan!</p>
                         <br>
@@ -303,13 +303,13 @@
                 </div>
 
                 <div class="qabox">
-                    <div class="qbox">
+                    <div class="qbox-question" onclick="toggleAnswer(this)">
                         <h1>Apakah acara Developer Workshop bersifat gratis?</h1>
                         <div class="span-btn">
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                     </div>
-                    <div class="abox">
+                    <div class="abox-answer">
                         <br>
                         <p>Developer Workshop merupakan acara berbayar. Peserta harus membayar Rp45.000 untuk menghadiri acara ini.</p>
                         <br>
@@ -317,13 +317,13 @@
                 </div>
 
                 <div class="qabox">
-                    <div class="qbox">
+                    <div class="qbox-question" onclick="toggleAnswer(this)">
                         <h1>Siapa yang bisa saya hubungi terkait pendaftaran?</h1>
                         <div class="span-btn">
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                     </div>
-                    <div class="abox">
+                    <div class="abox-answer">
                         <br>
                         <p>Jika memiliki pertanyaan, jangan ragu menghubungi:</p>
                         <div class="contact-box">
@@ -475,7 +475,7 @@
             </div>
             <div class="box">
                 <div class="left">
-                <!-- <form action="" id="form">
+                <form action="" id="form">
                     <label for="name">Name</label>
                     <div class="name">
                         <input type="text" name="name" id="name" placeholder="Name">
@@ -495,34 +495,6 @@
                         <div class="massage">
                             <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Input Your Massage Here..."></textarea>                           
                         </div>
-<<<<<<< HEAD
-                </form> -->
-                </div>
-                <div class="right">
-                    <!-- <h1>Socisal Media</h1>
-                    <ul>
-                        <li>
-                            <i class="fa-brands fa-instagram"></i>
-                            <h1>techoscapebncc</h1>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-envelope"></i>
-                            <h1>bncc.net</h1>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-twitter"></i>
-                            <h1>BNCC_Binus</h1>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-facebook"></i>
-                            <h1>Bina Nusantara Computer Club</h1>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <h1>Bina Nusantara Computer Club</h1>
-                        </li>
-                    </ul> -->
-=======
                         <div class="submit">
                             <input type="submit" value="SEND">
                         </div>
@@ -567,7 +539,6 @@
                             </div>
                         </div>
                     </div>
->>>>>>> 9f96a9702065459045eecdb1a7e0bd0f5465b018
                 </div>
             </div>
         </div>

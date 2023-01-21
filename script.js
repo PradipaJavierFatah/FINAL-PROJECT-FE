@@ -48,16 +48,29 @@ function showSlides(n) {
 const faqs = document.querySelectorAll(".qabox");
 
 faqs.forEach(qabox => {
-    qabox.addEventListener("click", () => {
+    qabox.addEventListener("click",e => {
 
-        qabox.classList.toggle("active");
-
-//         qabox.forEach((qabox) => {
-//             if(e.target.nextElementSibling !== qabox && qabox.classList.contains("active")) {
-//                 qabox.classList.remove("active");
-//             }
-//         });
-
-//         qabox.classList.remove("active");
+        e.currentTarget.classList.toggle('active');
+        
+        qabox.forEach(qabox => qabox.classList.remove('active'));
+        
+        
+        // qabox.classList.toggle("active");
     });
 });
+
+// FAQs2
+// function toggleAnswer(question) {
+//     var answer = question.nextElementSibling;
+  
+//     if (answer.style.display === "block") {
+//       answer.style.display = "none";
+//     } else {
+//       var content = question.parentNode;
+//       var open = content.querySelectorAll('.abox-answer:not([style="display: none;"])');
+//       for (var i = 0; i < open.length; i++) {
+//         open[i].style.display = "none";
+//       }
+//       answer.style.display = "block";
+//     }
+//   }
