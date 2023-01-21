@@ -8,7 +8,6 @@
     --gray: #D9D9D9;
     --green: #6CBFB1;
 
-
     --blue1: #009393;
     --blue2: #3CADAD;
     --blue3: #56B5B5;
@@ -514,6 +513,83 @@ a{
     line-height: 24px;
 }
 /* Mentor & Jury  */
+
+/* Reson */
+#reson-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 3rem;
+    gap: 36px;
+}
+
+
+#reson-section .container .head h1{
+    color: var(--blue4);
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 98px;
+    border: 1px solid #FFFEFE;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-block: 3rem;
+}
+
+#reson-section .container .boxtop {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+#reson-section .container .boxbtm{
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+#reson-section .container .box{
+    background-color: var(--white1);
+    width: 420px;
+    height: 675px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 36px;
+}
+
+#reson-section .container .box .card .judul {
+    height: 337.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reson-section .container .box .card .isi {
+    height: 337.5px;
+    display: flex;
+    margin-top: -3.5rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+#reson-section .container .box .card .judul h1 {
+    color: var(--blue1);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    /* padding-block: 3rem; */
+}
+
+#reson-section .container .box .card .isi h2 {
+    color: var(--blue1);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+
+}
+/* Reson */
+
 
 /* FAQ */
 #faq-section .container {
@@ -1264,13 +1340,129 @@ form .submit  input {
     justify-content: center;
 }
 
-
-
 #Contact-section .container .box .left {
     display: flex;
     flex-direction: column;
     padding: 3rem;
 }
+
+
+/* Powered and Organized by */
+#pao-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 160px;
+    margin-bottom: 66px;
+}
+
+#pao-section .container .bncc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#pao-section .container .bncc h1{
+    color: var(--blue1);
+    text-align: center;
+}
+
+#pao-section .container .kiri .bncclogo img {
+    width: 251px
+}
+
+#pao-section .container .bawah{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 115px ;
+}
+
+#pao-section .container .gojek{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#pao-section .container .bawah .gojek h1{
+    color: var(--blue1);
+}
+
+#pao-section .container .bawah .gojeklogo img {
+    width: 344px;
+}
+
+#pao-section .container .tiket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 22px ;
+}
+
+#pao-section .container .bawah .tiket h1{
+    color: var(--blue1);
+}
+
+#pao-section .container .bawah .tiketlogo img {
+    width: 383px;
+}
+
+#pao-section .container .kanan .atas .email input {
+    /* margin-left: -100px; */
+    background-color: var(--white1);
+    border: 7px solid #6FC6C6;
+    border-radius: 125px;
+    width: 961px;
+    height: 93px;
+    padding-inline: 2rem;
+}
+
+#pao-section .container .kanan .atas .email input::-webkit-input-placeholder{
+    font-weight: 600px;
+    font-size: 28px;
+    font-size: bold;
+    color: var(--blue1);
+}
+
+
+#pao-section .container .kanan .atas .email .btn{
+    margin-left: -437.5px;
+    background-color: var(--blue4);
+    border-radius: 125px;
+    width: 430.96px;
+    height: 93px;
+}
+
+#pao-section .container .kanan .atas .email .btn::-webkit-progress-value{
+    margin-left: -437.5px;
+    background-color: var(--blue4);
+    border-radius: 125px;
+    width: 430.96px;
+    height: 93px;
+}
+
+#pao-section .container .kanan .atas .email input[type=button] {
+    margin-left: -437.5px;
+    background-color: var(--blue4);
+    color: var(--white1);
+    border-radius: 125px;
+    width: 430.96px;
+    height: 88px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+
+/* Powered and Organized by */
 
 /* Footer */
 #footer-section .garis{
