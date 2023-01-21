@@ -306,6 +306,7 @@ a{
     background-color: #8DD0D0;
     border-radius: 20px;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 #champ-section .container .price-btn > h1 {
@@ -315,6 +316,18 @@ a{
     text-align: center;
     color: #FFFFFF;
 }
+
+#champ-section .container .champ-content .box img:hover {
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#champ-section .container .price-btn > h1:hover {
+    color: var(--blue1);
+    transition: 0.1s;
+}
+
 /* Champion Prizes */
 
 
@@ -352,7 +365,7 @@ a{
     line-height: 192px;
     text-align: center;
     color: var(--blue5);
-    right: -20rem;
+    /* right: -20rem; */
 }
 
 #mentor .container .sub-header > h2 {
@@ -378,7 +391,7 @@ a{
     height: 240px;
     background: #A0D8D8;
     border-radius: 25px;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 #mentor .container .slideshow-container .mySlides .box > img {
@@ -412,7 +425,7 @@ a{
     position: relative;
     transition: 0.6s ease;
     user-select: none;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 #mentor .container .slideshow-container .fade {
@@ -425,6 +438,7 @@ a{
     from {opacity: .4}
     to {opacity: 1}
 }
+
 
 #jury .container {
     display: flex;
@@ -546,17 +560,17 @@ a{
 .span-btn > i {
     display: flex;
     justify-content: center;
-    color: var(--blue1);
+    color: white;
     transform: scale(1.2);
 }
 
 #faq-section .container .faq-content .qbox-question {
     width: 626px;
-    background-color: white;
+    background-color: #8DD0D0;
     box-shadow: 9px 8px 5px -4px rgba(111,198,198,0.75);
     -webkit-box-shadow: 9px 8px 5px -4px rgba(111,198,198,0.75);
     -moz-box-shadow: 9px 8px 5px -4px rgba(111,198,198,0.75);
-    border: 2px solid #6FC6C6;
+    border: 2px solid #009393;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -570,20 +584,19 @@ a{
     display: flex;
     font-weight: 600;
     font-size: 21px;
-    color: var(--blue4);
+    color: white;
 }
 
-#faq-section .container .faq-content .abox-answer {
-    /* display: none; */
+#faq-section .container .faq-content .qabox .abox-answer {
     width: 580px;
-    background: var(--blue5);
-    border: 2px solid var(--blue5);
+    background: #e7fcf9;
+    /* border: 2px solid #6CB2A6; */
     border-radius: 15px;
     padding: 0px 28px;
 }
 
 /* DD */
-#faq-section .container .faq-content .abox-answer {
+#faq-section .container .faq-content .qabox .abox-answer {
     max-height: 0;
     overflow: hidden;
     border: none;
@@ -619,22 +632,22 @@ a{
 }
 /* DD */
 
-#faq-section .container .faq-content .abox-answer p  {
+#faq-section .container .faq-content .qabox .abox-answer p  {
     font-weight: 500;
     font-size: 19px;
     line-height: 32px;
+    color: #009393;
+}
+
+#faq-section .container .faq-content .qabox .abox-answer ul li{
     color: white;
 }
 
-#faq-section .container .faq-content .abox-answer ul li{
-    color: white;
-}
-
-#faq-section .container .faq-content .abox-answer .contact-box ul li{
+#faq-section .container .faq-content .qabox .abox-answer .contact-box ul li{
     list-style: none;
 }
 
-#faq-section .container .faq-content .abox-answer .contact-box {
+#faq-section .container .faq-content .qabox .abox-answer .contact-box {
     display: flex;
     flex-direction: row;
     gap: 8rem;
@@ -675,7 +688,7 @@ a{
     flex-direction: row;
     width: 805px;
     background: #EBEBEB;
-    border: 8px solid var(--blue4);
+    border: 8px solid var(--blue6);
     border-radius: 100px;
     padding: 20px 25px;
     gap: 35px;
@@ -686,7 +699,7 @@ a{
     flex-direction: row-reverse;
     width: 805px;
     background: #EBEBEB;
-    border: 8px solid var(--blue2);
+    border: 8px solid var(--blue4);
     border-radius: 100px;
     padding: 20px 25px;
     gap: 115px;
@@ -697,10 +710,21 @@ a{
     flex-direction: row;
     width: 805px;
     background: #EBEBEB;
-    border: 8px solid var(--blue1);
+    border: 8px solid var(--blue3);
     border-radius: 100px;
     padding: 20px 25px;
     gap: 35px;
+}
+
+#Timeline-section .container .box .day4 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 805px;
+    background: #EBEBEB;
+    border: 8px solid var(--blue1);
+    border-radius: 100px;
+    padding: 20px 25px;
+    gap: 115px;
 }
 
 #Timeline-section .container .box .frame{
@@ -878,15 +902,144 @@ a{
 }
 /* Media Partner */
 
-/* contact us */
+/* Other Event */
+#event-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 3rem;
+    gap: 3rem;
+}
 
+#event-section .container .header > h1 {
+    color: var(--blue4);
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 98px;
+    border: 1px solid #FFFEFE;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-block: 3rem;
+}
+
+#event-section .container .box {
+    width: 1158px;
+    height: 761px;
+    background: #EEF8F6;
+    border: 4px solid #6FC6C6;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding-block: 53px;
+    gap: 3rem;
+}
+
+#event-section .container .box .sub-head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#event-section .container .box .sub-head > h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #009393;
+}
+
+#event-section .container .box .sub-head > h3 {
+    border-radius: 25px;
+    width: 198px;
+    height: 37px;
+    background-color: var(--blue4);
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+#event-section .container .box .sub-head > h3:hover {
+    color: var(--blue1);
+    transition: 0.1s;
+}
+
+#event-section .container .box .slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#event-section .container .box .slideshow-container .mySlide {
+    display: none;
+}
+
+#event-section .container .box .slideshow-container .mySlide .content {
+    width: 877px;
+    height: 458px;
+    background: rgba(111, 198, 198, 0.46);
+    border-radius: 25px;
+    margin: 1rem;
+}
+
+#event-section .container .box .slideshow-container .mySlide .content > img {
+    width: 877px;
+    height: 458px;
+    border-radius: 25px;
+    background-size: cover;
+}
+
+/* dw */
+#event-section .container .box .slideshow-container .mySlidez {
+    display: none;
+}
+
+#event-section .container .box .slideshow-container .mySlidez .content {
+    width: 877px;
+    height: 458px;
+    background: rgba(111, 198, 198, 0.46);
+    border-radius: 25px;
+    margin: 1rem;
+}
+
+#event-section .container .box .slideshow-container .mySlidez .content > img {
+    width: 877px;
+    height: 458px;
+    border-radius: 25px;
+    background-size: cover;
+}
+/* dw */
+
+#event-section .container .box .slideshow-container .slide-btn > img {
+    cursor: pointer;
+    position: relative;
+    transition: 0.6s ease;
+    user-select: none;
+    padding: 3rem;
+}
+
+#event-section .container .slideshow-container .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* Other Event */
+
+/* contact us */
 #Contact-section .container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
 
 #Contact-section .container .content > h1{
     color: var(--blue4);
@@ -898,7 +1051,6 @@ a{
     margin-block: 3rem;
     text-align: center;
 }
-
 
 #Contact-section .container .box {
     width: 1245px;

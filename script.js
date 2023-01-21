@@ -74,3 +74,55 @@ faqs.forEach(qabox => {
 //       answer.style.display = "block";
 //     }
 //   }
+
+//Other Event VC
+let slideIn = 1;
+showSlide(slideIn);
+
+// Next/previous controls
+function plusSlide(n) {
+  showSlide(slideIn += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlide(slideIn = n);
+}
+
+function showSlide(n) {
+    let i;
+    let slide = document.getElementsByClassName("mySlide");
+    if (n > slide.length) {slideIn = 1}
+    if (n < 1) {slideIn = slide.length}
+    for (i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+    }
+
+    slide[slideIn-1].style.display = "flex";
+}
+
+//Other Event DW
+let slideInz = 1;
+showSlidez(slideInz);
+
+// Next/previous controls
+function plusSlidez(n) {
+  showSlidez(slideInz += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlidez(slideInz = n);
+}
+
+function showSlidez(n) {
+    let i;
+    let slidez = document.getElementsByClassName("mySlidez");
+    if (n > slidez.length) {slideInz = 1}
+    if (n < 1) {slideInz = slidez.length}
+    for (i = 0; i < slidez.length; i++) {
+        slidez[i].style.display = "none";
+    }
+
+    slidez[slideInz-1].style.display = "flex";
+}
