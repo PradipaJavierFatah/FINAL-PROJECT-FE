@@ -1340,6 +1340,10 @@ form .submit  input {
     justify-content: center;
 }
 
+form .submit  input:hover {
+    color: var(--blue1);
+}
+
 #Contact-section .container .box .left {
     display: flex;
     flex-direction: column;
@@ -1458,7 +1462,10 @@ form .submit  input {
     font-size: 25px;
     font-weight: bold;
     cursor: pointer;
-    
+}
+
+#pao-section .container .kanan .atas .email input[type=button]:hover {
+    color: var(--blue1);
 }
 
 
